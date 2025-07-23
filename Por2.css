@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: #4a90e2;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: #4a90e2;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.about, .projects, .contact {
+  background: #fff;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: #eee;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 0.7rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+  margin-top: 2rem;
+}
+.skills {
+  padding: 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4a90e2;
+  width: 0;
+  transition: width 1s ease-in-out;
+  border-radius: 6px 0 0 6px;
+}
+
+.percent {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+#projects {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.project-card p {
+  color: #555;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
